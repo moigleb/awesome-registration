@@ -1,0 +1,123 @@
+form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $form-back;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .input-group-wrap {
+    width: 100%;
+    max-width: 450px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: $input-group;
+
+    .link-wrap {
+      margin-bottom: 40px;
+
+      :first-child {
+        margin-right: 25px;
+      }
+
+      .active-link,
+      .none-active-link {
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-decoration: none;
+        letter-spacing: 5px;
+        white-space: nowrap;
+        padding-bottom: 15px;
+      }
+
+      .active-link {
+        color: $off-white;
+        display: inline-block;
+
+        &:after {
+          content: "";
+          display: block;
+          border-bottom: 3px solid $off-white;
+          width: 100%;
+          margin-top: -3px;
+        }
+      }
+
+      .none-active-link {
+        color: #3b4a4c;
+      }
+    }
+
+    .input-wrap {
+      color: $off-white;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      height: 135px;
+
+      label {
+        margin-left: 25px;
+      }
+
+      .input-item {
+        text-align: center;
+        margin-top: 10px;
+
+        input {
+          width: 100%;
+          border-radius: 50px;
+          padding: 15px 25px 15px;
+          height: 60px;
+          border: none;
+          outline: none;
+          background-color: $input-back;
+          font-size: 0.8rem;
+          text-transform: none;
+          letter-spacing: 5px;
+          color: $off-white;
+        }
+
+        .error-message {
+          font-size: 0.6rem;
+          color: $alert;
+        }
+      }
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $off-white;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: $off-white;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: $off-white;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: $off-white;
+    }
+  }
+
+  .button-wrap {
+    margin-top: 50px;
+
+    button {
+      width: 100%;
+      height: 60px;
+      border-radius: 50px;
+      color: $off-white;
+      background-color: #0DA7C1;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+  }
+
+
+}

@@ -1,0 +1,45 @@
+  header {
+    width: 100%;
+    padding: 1.4rem;
+
+    nav {
+      max-width: 1280px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        width: 63px;
+        height: auto;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        li {
+          display: inline-block;
+        }
+
+        a {
+          padding: 0 1.4rem;
+          color: $dark-grey;
+          text-decoration: none;
+          font-size: 0.8rem;
+          transition: 0.3s ease;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $grey-l;
+          }
+        }
+      }
+    }
+  }
