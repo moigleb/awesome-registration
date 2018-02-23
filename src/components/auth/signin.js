@@ -31,11 +31,6 @@ const renderField = ({ input, label, type, meta: { touched, error }}) => (
 
 class Signin extends Component {
 
-  componentDidMount() {
-    console.log(this.props);
-
-  }
-
   componentWillUpdate(nextProps) {
     if(nextProps.authenticated) {
       this.props.history.push("/")

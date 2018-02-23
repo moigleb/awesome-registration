@@ -9,7 +9,7 @@ export const signinUser = ({ email, password }) => {
       dispatch(authenticated());
       localStorage.setItem('token', request);
 
-      console.log(request, "token sign in")
+      // console.log(request, "token sign in")
     } catch (error) {
       dispatch(authError('Bad Login Info'));
       // console.log(error.error);
@@ -30,10 +30,10 @@ export const signupUser = ({ email, password }) => {
       const request = await makeRequestSignup(email, password);
       dispatch(authenticated());
       localStorage.setItem('token', request);
-      console.log(request, "token sign up")
+      // console.log(request, "token sign up")
     } catch(response) {
       dispatch(authError(response.response.data.error.message));
-      console.log(response.response.data.error.message)
+      // console.log(response.response.data.error.message)
     }
   }
 };

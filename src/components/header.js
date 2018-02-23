@@ -5,15 +5,7 @@ import Logo from "../assets/images/react-logo.png";
 
 class Header extends Component {
 
-  componentWillMount(){
-    console.log(this.props.authenticated.authenticated, "componentWillMount")
-  }
-  componentDidMount(){
-    console.log(this.props.authenticated.authenticated, "componentDidMount")
-  }
-
   renderLinks (){
-    console.log(this.props.authenticated.authenticated, "auth");
     if(this.props.authenticated.authenticated) {
       return <li><NavLink to="/signout" activeClassName="is-active">Sig Out</NavLink></li>;
     }
@@ -21,7 +13,6 @@ class Header extends Component {
   };
 
   render() {
-    console.log(this.props, "header authenticated");
 
     return (
         <header>
